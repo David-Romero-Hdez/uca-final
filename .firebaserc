@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "firecrud-2d9e7": {
+      "hosting": {
+        "uca-final": [
+          "firecrud-2d9e7"
+        ]
+      }
+    }
+  }
+}
