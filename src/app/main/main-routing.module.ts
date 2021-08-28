@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MainComponent } from './main.component';
 
 const routes: Routes = [
+  { path: '**', pathMatch: 'full', redirectTo: 'ubicaciones' },
   {
     path: '', component: MainComponent, children: [
       { path: 'ubicaciones', loadChildren: () => import('src/app/main/map/map.module').then(m => m.MapModule) },
