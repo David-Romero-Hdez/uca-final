@@ -5,8 +5,8 @@ import { MainComponent } from './main.component';
 
 const routes: Routes = [
   {
-    path: 'inicio', component: MainComponent, children: [
-      { path: '', loadChildren: () => import('src/app/main/map/map.module').then(m => m.MapModule) },
+    path: '', component: MainComponent, children: [
+      { path: 'ubicaciones', loadChildren: () => import('src/app/main/map/map.module').then(m => m.MapModule) },
     ]
   }
 ];

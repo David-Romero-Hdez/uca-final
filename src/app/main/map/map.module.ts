@@ -4,6 +4,7 @@ import { MapComponent } from './map.component';
 import { MapViewComponent } from './map-view/map-view.component';
 import { MapListComponent } from './map-list/map-list.component';
 import { MapListItemComponent } from './map-list-item/map-list-item.component';
+import { MapRoutingModule } from './map-routing.module';
 
 
 
@@ -15,7 +16,8 @@ import { MapListItemComponent } from './map-list-item/map-list-item.component';
     MapListItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MapRoutingModule
   ]
 })
 export class MapModule { }

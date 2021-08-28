@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MapComponent } from './map.component';
 
 const routes: Routes = [
-  { path: 'ubicaciones', component: MapComponent }
+  { path: '', component: MapComponent }
 ];
 
 @NgModule({
