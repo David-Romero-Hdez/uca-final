@@ -8,6 +8,9 @@ import { MainComponent } from './main.component';
   declarations: [
     MainComponent
   ],
+  exports: [
+    MainComponent
+  ],
   imports: [
     CommonModule
   ]
