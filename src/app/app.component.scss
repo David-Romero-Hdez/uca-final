@@ -1,0 +1,7 @@
+@import "/src/vars.scss";
+
+.view {
+    background: #000;
+    height: calc(100vh - #{$nav-height});
+    width: 100%;
+}
