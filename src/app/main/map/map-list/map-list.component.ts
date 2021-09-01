@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PlaceService } from 'src/app/services/places.service';
 
 @Component({
   selector: 'app-map-list',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly placeService:PlaceService) { }
 
   ngOnInit(): void {
+    console.log(this.placeService.getAll());
   }
 
 }

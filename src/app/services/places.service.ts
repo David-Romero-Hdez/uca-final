@@ -1,14 +1,11 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire//compat/firestore';
 import { Places } from 'src/interfaces/place.model';
-
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 @Injectable({
   providedIn: 'root'
 })
-export class TutorialService {
-
+export class PlaceService {
   private dbPath = '/places';
-
   databaseRef: AngularFirestoreCollection<Places>
 
   constructor(private db: AngularFirestore) {
