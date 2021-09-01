@@ -1,3 +1,4 @@
+import { AgmCoreModule } from '@agm/core';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +13,9 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
+    AgmCoreModule.forRoot({
+      apiKey: ''
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
