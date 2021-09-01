@@ -1,19 +1,22 @@
 import { Injectable } from '@angular/core';
 import { Places } from 'src/interfaces/place.model';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class PlaceService {
   private dbPath = '/places';
-  databaseRef: AngularFirestoreCollection<Places>
+  private databaseRef: AngularFirestoreCollection<Places>
+  private item$: Observable<Places[]>;
 
   constructor(private db: AngularFirestore) {
     this.databaseRef = db.collection(this.dbPath);
+    this.item$ = this.databaseRef.valueChanges();
   }
 
-  getAll(): AngularFirestoreCollection<Places> {
-    return this.databaseRef;
+  getAll(): Observable<Places[]> {
+    return this.item$;
   }
 
   create(place: Places): any {

@@ -8,10 +8,10 @@ import { PlaceService } from 'src/app/services/places.service';
 })
 export class MapListComponent implements OnInit {
 
-  constructor(private readonly placeService:PlaceService) { }
+  constructor(private readonly placeService: PlaceService) { }
 
   ngOnInit(): void {
-    console.log(this.placeService.getAll());
+    this.placeService.getAll().subscribe(o => console.log(o));
   }
 
 }
