@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  GOOGLE_CLOUD_KEY: process.env.GOOGLE_CLOUD_KEY,
 };
