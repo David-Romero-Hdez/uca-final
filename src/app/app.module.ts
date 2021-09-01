@@ -16,7 +16,7 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    provideFirebaseApp(() => initializeApp({ ... })),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
     AgmCoreModule.forRoot({
       apiKey: environment.GOOGLE_CLOUD_KEY
