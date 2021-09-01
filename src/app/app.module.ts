@@ -5,9 +5,7 @@ import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
-import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
-import { getFirestore, provideFirestore } from '@angular/fire/firestore';
-
+import { AngularFireModule } from '@angular/fire/compat';
 @NgModule({
   declarations: [
     AppComponent
@@ -16,8 +14,7 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFirestore(() => getFirestore()),
+    AngularFireModule.initializeApp(environment.firebase),
     AgmCoreModule.forRoot({
       apiKey: environment.GOOGLE_CLOUD_KEY
     })
