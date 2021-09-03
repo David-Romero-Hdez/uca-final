@@ -1,4 +1,5 @@
 <div class="wrapper">
-  <app-map-list-item *ngFor="let item of [1, 2, 3, 4, 5, 6, 7]">
-  </app-map-list-item>
+  <div *ngFor="let place of places">
+    <app-map-list-item [place]="place"></app-map-list-item>
+  </div>
 </div>
