@@ -6,4 +6,15 @@
   [styles]="styles"
   [backgroundColor]="background"
 >
+  <div *ngFor="let place of places">
+    <agm-marker
+      [latitude]="place.geopoint._lat"
+      [longitude]="place.geopoint._long"
+      [iconUrl]="place.map_icon"
+    >
+      <agm-info-window [disableAutoPan]="true">
+        <h3>{{ place.name }}</h3>
+      </agm-info-window>
+    </agm-marker>
+  </div>
 </agm-map>

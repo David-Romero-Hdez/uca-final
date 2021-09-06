@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PlaceService } from 'src/app/services/places.service';
 @Component({
   selector: 'app-map-view',
   templateUrl: './map-view.component.html',
@@ -8,7 +9,7 @@ export class MapViewComponent implements OnInit {
 
   lat = 21.881146882782275;
   lng = -102.2965671578299;
-  zoom = 13;
+  zoom = 12;
   background = '#242F3E'
   styles: any = [
     {
@@ -255,9 +256,13 @@ export class MapViewComponent implements OnInit {
       ]
     }
   ]
-  constructor() { }
+  places!: any
+  constructor(private readonly placeService: PlaceService) { }
 
   ngOnInit(): void {
+    this.placeService.getAll().subscribe(data => {
+      this.places = data
+    });
   }
 
 }
