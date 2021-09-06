@@ -14,6 +14,8 @@ export class MapListComponent implements OnInit {
   ngOnInit(): void {
     this.placeService.getAll().subscribe(data => {
       this.places = data
+      console.log(data);
+
     });
   }
 

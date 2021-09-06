@@ -5,6 +5,7 @@ import { MapViewComponent } from './map-view/map-view.component';
 import { MapListComponent } from './map-list/map-list.component';
 import { MapListItemComponent } from './map-list-item/map-list-item.component';
 import { MapRoutingModule } from './map-routing.module';
+import { AgmCoreModule } from '@agm/core';
 
 
 
@@ -17,7 +18,8 @@ import { MapRoutingModule } from './map-routing.module';
   ],
   imports: [
     CommonModule,
-    MapRoutingModule
+    MapRoutingModule,
+    AgmCoreModule
   ]
 })
 export class MapModule { }
