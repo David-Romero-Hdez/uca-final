@@ -16,7 +16,7 @@ import { AngularFireModule } from '@angular/fire/compat';
     SharedModule,
     AngularFireModule.initializeApp(environment.firebase),
     AgmCoreModule.forRoot({
-      apiKey: environment.GOOGLE_CLOUD_KEY
+      apiKey: "AIzaSyDroLKKl0NyML50NLE-H5BE8JziFdHAFJM"
     })
   ],
   providers: [],

@@ -15,7 +15,6 @@ export class MapListComponent implements OnInit {
     this.placeService.getAll().subscribe(data => {
       this.places = data
       console.log(data);
-
     });
   }
 

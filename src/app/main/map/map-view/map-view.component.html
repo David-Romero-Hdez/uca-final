@@ -1,2 +1,9 @@
 <app-map-list></app-map-list>
-<div class="full" id="map"></div>
+<agm-map
+  [latitude]="lat"
+  [longitude]="lng"
+  [zoom]="zoom"
+  [styles]="styles"
+  [backgroundColor]="background"
+>
+</agm-map>
