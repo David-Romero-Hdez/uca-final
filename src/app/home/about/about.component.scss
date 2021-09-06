@@ -1,0 +1,63 @@
+:host {
+  display: grid;
+  grid: repeat(4, max-content) / 1fr;
+  background: #f1f1f1;
+  padding-bottom: 100px;
+  row-gap: 30px;
+}
+.about-title {
+  align-self: center;
+  justify-self: center;
+}
+img {
+  width: 200px;
+  height: 20px;
+  align-self: center;
+  justify-self: center;
+}
+.text-about {
+  align-self: center;
+  justify-self: center;
+}
+.about-cards {
+  margin-top: 30px;
+  display: grid;
+  grid: auto / repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 130px;
+}
+.card {
+  padding: 75px;
+  background: #ffffff;
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  row-gap: 30px;
+  border-radius: 12.5px;
+}
+.image-holder {
+  justify-self: center;
+  width: 150px;
+  height: 150px;
+  background: #0073fd;
+  border-radius: 100px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 15px 10px #c4c4c4;
+}
+
+.image-holder img {
+  width: 50px;
+  height: 50px;
+  background-color: #0073fd;
+}
+h3 {
+  margin: 0;
+  justify-self: center;
+}
+
+.ow {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}

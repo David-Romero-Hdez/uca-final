@@ -1,0 +1,50 @@
+:host {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background-image: url("/assets/images/Aguascalientes.jpg");
+  /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  /* filter: grayscale(100%); */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding-bottom: 150px;
+  background-position: 0 -300px;
+  padding-top: 150px;
+}
+.container {
+  display: grid;
+  grid: repeat(2, min-content) / 1fr;
+  row-gap: 20px;
+}
+h5 {
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+}
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 100px;
+}
+.social-media {
+  justify-self: center;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 35px;
+}
+.social-media a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+.map-button {
+  justify-self: center;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background-color: #0073fd;
+  text-decoration: none;
+  width: 130px;
+  height: 30px;
+  border-radius: 20px;
+}

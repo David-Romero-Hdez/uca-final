@@ -1,0 +1,55 @@
+:host {
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  background: #f1f1f1;
+}
+.main-form {
+  position: relative;
+  top: -50px;
+  display: grid;
+  grid: repeat(4, 1fr) / repeat(3, 1fr);
+  background: #0073fd;
+  color: #fff;
+  width: 1365px;
+  border-radius: 12.5px;
+  gap: 15px;
+  padding: 15px;
+}
+.form-title {
+  grid-column: 1/ -1;
+  justify-self: center;
+}
+.email-group {
+  grid-column: 2/-1;
+  display: grid;
+  grid: 1fr / 1fr 1fr;
+  column-gap: 15px;
+  padding-right: 15px;
+}
+.contact {
+  grid-column: 1/-1;
+  display: grid;
+  grid: 1fr/ 1fr 1fr;
+  column-gap: 15px;
+}
+.contact input {
+  width: 645px;
+}
+button {
+  border-radius: 25px;
+  border: none;
+  grid-column: 2/3;
+  background: #222;
+  color: #fff;
+}
+
+input {
+  width: 415px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background: #2981fd;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0 15px;
+}

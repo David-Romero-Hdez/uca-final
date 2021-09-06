@@ -5,6 +5,7 @@ import { SingupComponent } from './singup/singup.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,6 +19,7 @@ import { HomeRoutingModule } from './home-routing.module';
   imports: [
     CommonModule,
     HomeRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class HomeModule { }
