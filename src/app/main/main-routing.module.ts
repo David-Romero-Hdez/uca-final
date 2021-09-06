@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: '**', pathMatch: 'full', redirectTo: 'ubicaciones' },
   {
     path: '', component: MainComponent, children: [
-      { path: 'ubicaciones', loadChildren: () => import('src/app/main/map/map.module').then(m => m.MapModule) },
+      { path: '', loadChildren: () => import('src/app/main/map/map.module').then(m => m.MapModule) },
     ]
   }
 ];
